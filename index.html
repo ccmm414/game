@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamelist.quest - Play Exciting Online Games</title>
+    <meta name="description" content="Play the best online games including Monster Survivors and many more. Enjoy action, adventure, and strategy games on our responsive gaming platform.">
+    <link rel="canonical" href="https://gamelist.quest/">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            blue: '#007AFF',
+                            green: '#34C759',
+                            indigo: '#5856D6',
+                            orange: '#FF9500',
+                            pink: '#FF2D55',
+                            purple: '#AF52DE',
+                            red: '#FF3B30',
+                            teal: '#5AC8FA',
+                            yellow: '#FFCC00',
+                            gray: {
+                                100: '#F2F2F7',
+                                200: '#E5E5EA',
+                                300: '#D1D1D6',
+                                400: '#C7C7CC',
+                                500: '#AEAEB2',
+                                600: '#8E8E93',
+                                700: '#636366',
+                                800: '#48484A',
+                                900: '#3A3A3C',
+                                950: '#1C1C1E',
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        .game-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .game-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        }
+        .responsive-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body class="bg-apple-gray-100 text-apple-gray-900">
+    <header class="bg-gradient-to-r from-apple-purple to-apple-blue py-6 md:py-12">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center mb-8">
+                <a href="/" class="text-white text-2xl font-bold">Gamelist.quest</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="/" class="text-white hover:text-apple-gray-200 transition">Home</a>
+                    <a href="games.html" class="text-white hover:text-apple-gray-200 transition">All Games</a>
+                    <a href="#featured" class="text-white hover:text-apple-gray-200 transition">Featured</a>
+                    <a href="#about" class="text-white hover:text-apple-gray-200 transition">About</a>
+                </div>
+            </nav>
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Gamelist.quest</h1>
+                <p class="text-xl md:text-2xl text-apple-gray-100 max-w-3xl mx-auto">Your ultimate destination for exciting online games!</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section id="featured" class="mb-12">
+            <h2 class="text-3xl font-bold text-apple-blue mb-6">Featured Game</h2>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-apple-gray-900 mb-2">Monster Survivors</h3>
+                    <p class="text-lg text-apple-gray-700 mb-4">Survive endless waves of monsters in this thrilling action-packed adventure!</p>
+                </div>
+                <div class="game-container">
+                    <iframe src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" class="responsive-iframe" allowfullscreen></iframe>
+                </div>
+                <div class="p-6">
+                    <a href="monster-survivors.html" class="inline-block bg-apple-blue text-white font-semibold px-6 py-3 rounded-lg hover:bg-apple-indigo transition">Game Details</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-apple-green mb-6">Popular Games</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Game Card 1 - Monster Survivors -->
+                <div class="game-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/600x400?text=Monster+Survivors" alt="Monster Survivors" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-apple-gray-900 mb-2">Monster Survivors</h3>
+                        <p class="text-apple-gray-700 mb-4">Survive endless waves of monsters in this thrilling action game.</p>
+                        <a href="monster-survivors.html" class="inline-block bg-apple-blue text-white font-semibold px-4 py-2 rounded-lg hover:bg-apple-indigo transition">Play Now</a>
+                    </div>
+                </div>
+
+                <!-- Game Card 2 - Space Adventure -->
+                <div class="game-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/600x400?text=Space+Adventure" alt="Space Adventure" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-apple-gray-900 mb-2">Space Adventure</h3>
+                        <p class="text-apple-gray-700 mb-4">Explore the universe and discover new planets in this space simulator.</p>
+                        <a href="#" class="inline-block bg-apple-blue text-white font-semibold px-4 py-2 rounded-lg hover:bg-apple-indigo transition">Coming Soon</a>
+                    </div>
+                </div>
+
+                <!-- Game Card 3 - Puzzle Master -->
+                <div class="game-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/600x400?text=Puzzle+Master" alt="Puzzle Master" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-apple-gray-900 mb-2">Puzzle Master</h3>
+                        <p class="text-apple-gray-700 mb-4">Challenge your brain with hundreds of unique puzzles and riddles.</p>
+                        <a href="#" class="inline-block bg-apple-blue text-white font-semibold px-4 py-2 rounded-lg hover:bg-apple-indigo transition">Coming Soon</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="games.html" class="inline-block bg-apple-green text-white font-semibold px-6 py-3 rounded-lg hover:bg-apple-teal transition">View All Games</a>
+            </div>
+        </section>
+
+        <section id="about" class="mb-12">
+            <h2 class="text-3xl font-bold text-apple-orange mb-6">About Our Platform</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <p class="text-lg mb-4">Gamelist.quest is your premier destination for high-quality online games that you can play directly in your browser. Our platform offers a diverse collection of games across various genres, ensuring there's something for everyone.</p>
+                <p class="text-lg mb-4">All our games are optimized for both desktop and mobile devices, allowing you to enjoy seamless gaming experiences wherever you are. We regularly update our collection with new and exciting titles to keep you entertained.</p>
+                <p class="text-lg">Join our growing community of gamers and discover your next favorite game today!</p>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-apple-pink mb-6">Why Choose Our Platform</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-apple-gray-800 mb-3">Free to Play</h3>
+                    <p>All games on our platform are completely free to play. No hidden fees or subscriptions required.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-apple-gray-800 mb-3">No Downloads</h3>
+                    <p>Play instantly in your browser without downloading or installing any software.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-apple-gray-800 mb-3">Mobile Friendly</h3>
+                    <p>Enjoy our games on any device with responsive design that adapts to your screen size.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-apple-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-xl font-bold">Gamelist.quest</p>
+                    <p class="text-apple-gray-400">© 2023 Gamelist.quest. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-apple-gray-400 hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="text-apple-gray-400 hover:text-white transition">Terms of Service</a>
+                    <a href="#" class="text-apple-gray-400 hover:text-white transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script to handle smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
