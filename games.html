@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Games - Gamelist.quest</title>
+    <meta name="description" content="Browse our collection of exciting online games including Monster Survivors and many more. Find your next favorite game to play instantly in your browser.">
+    <link rel="canonical" href="https://gamelist.quest/games.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            blue: '#007AFF',
+                            green: '#34C759',
+                            indigo: '#5856D6',
+                            orange: '#FF9500',
+                            pink: '#FF2D55',
+                            purple: '#AF52DE',
+                            red: '#FF3B30',
+                            teal: '#5AC8FA',
+                            yellow: '#FFCC00',
+                            gray: {
+                                100: '#F2F2F7',
+                                200: '#E5E5EA',
+                                300: '#D1D1D6',
+                                400: '#C7C7CC',
+                                500: '#AEAEB2',
+                                600: '#8E8E93',
+                                700: '#636366',
+                                800: '#48484A',
+                                900: '#3A3A3C',
+                                950: '#1C1C1E',
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        .game-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-apple-gray-100 text-apple-gray-900">
+    <header class="bg-gradient-to-r from-apple-purple to-apple-blue py-6 md:py-12">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center mb-8">
+                <a href="/" class="text-white text-2xl font-bold">Gamelist.quest</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="/" class="text-white hover:text-apple-gray-200 transition">Home</a>
+                    <a href="games.html" class="text-white hover:text-apple-gray-200 transition">All Games</a>
+                    <a href="#categories" class="text-white hover:text-apple-gray-200 transition">Categories</a>
+                    <a href="#popular" class="text-white hover:text-apple-gray-200 transition">Popular</a>
+                </div>
+            </nav>
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">All Games</h1>
+                <p class="text-xl md:text-2xl text-apple-gray-100 max-w-3xl mx-auto">Browse our collection of exciting online games</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section id="categories" class="mb-12">
+            <h2 class="text-3xl font-bold text-apple-blue mb-6">Game Categories</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <a href="#action" class="bg-white rounded-lg shadow-md p-4 text-center hover:bg-apple-blue hover:text-white transition duration-300">
+                    <h3 class="text-lg font-semibold">Action</h3>
+                </a>
+                <a href="#adventure" class="bg-white rounded-lg shadow-md p-4 text-center hover:bg-apple-green hover:text-white transition duration-300">
+                    <h3 class="text-lg font-semibold">Adventure</h3>
+                </a>
+                <a href="#puzzle" class="bg-white rounded-lg shadow-md p-4 text-center hover:bg-apple-orange hover:text-white transition duration-300">
+                    <h3 class="text-lg font-semibold">Puzzle</h3>
+                </a>
+                <a href="#strategy" class="bg-white rounded-lg shadow-md p-4 text-center hover:bg-apple-pink hover:text-white transition duration-300">
+                    <h3 class="text-lg font-semibold">Strategy</h3>
+                </a>
+            </div>
+        </section>
+
+        <section id="popular" class="mb-12">
+            <h2 class="text-3xl font-bold text-apple-green mb-6">Popular Games</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Game Card 1 - Monster Survivors -->
+                <div class="game-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/600x400?text=Monster+Survivors" alt="Monster Survivors" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-apple-gray-900">Monster Survivors</h3>
+                            <span class="bg-apple-green text-white text-xs font-bold px-2 py-1 rounded">Action</span>
+                        </div>
+                        <p class="text-apple-gray-700 mb-4">Survive endless waves of monsters in this thrilling action game.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-apple-yellow" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <span class="ml-1 text-apple-gray-700">4.8/5</span>
+                            </div>
+                            <a href="monster-survivors.html" class="inline-block bg-apple-blue text-white font-semibold px-4 py-2 rounded-lg hover:bg-apple-indigo transition">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Card 2 - Space Adventure -->
+                <div class="game-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/600x400?text=Space+Adventure" alt="Space Adventure" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-apple-gray-900">Space Adventure</h3>
+                            <span class="bg-apple-blue text-white text-xs font-bold px-2 py-1 rounded">Adventure</span>
+                        </div>
+                        <p class="text-apple-gray-700 mb-4">Explore the universe and discover new planets in this space simulator.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-apple-yellow" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <span class="ml-1 text-apple-gray-700">4.5/5</span>
+                            </div>
+                            <a href="#" class="inline-block bg-apple-blue text-white font-semibold px-4 py-2 rounded-lg hover:bg-apple-indigo transition">Coming Soon</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Card 3 - Puzzle Master -->
+                <div class="game-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/600x400?text=Puzzle+Master" alt="Puzzle Master" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-apple-gray-900">Puzzle Master</h3>
+                            <span class="bg-apple-orange text-white text-xs font-bold px-2 py-1 rounded">Puzzle</span>
+                        </div>
+                        <p class="text-apple-gray-700 mb-4">Challenge your brain with hundreds of unique puzzles and riddles.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-apple-yellow" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <span class="ml-1 text-apple-gray-700">4.7/5</span>
+                            </div>
+                            <a href="#" class="inline-block bg-apple-blue text-white font-semibold px-4 py-2 rounded-lg hover:bg-apple-indigo transition">Coming Soon</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="action" class="mb-12">
+            <h2 class="text-3xl font-bold text-apple-orange mb-6">Action Games</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Monster Survivors -->
+                <div class="game-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/600x400?text=Monster+Survivors" alt="Monster Survivors" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-apple-gray-900 mb-2">Monster Survivors</h3>
+                        <p class="text-apple-gray-700 mb-4">Survive endless waves of monsters in this thrilling action game.</p>
+                        <a href="monster-survivors.html" class="inline-block bg-apple-blue text-white font-semibold px-4 py-2 rounded-lg hover:bg-apple-indigo transition">Play Now</a>
+                    </div>
+                </div>
+
+                <!-- Zombie Apocalypse (Coming Soon) -->
+                <div class="game-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/600x400?text=Zombie+Apocalypse" alt="Zombie Apocalypse" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-apple-gray-900 mb-2">Zombie Apocalypse</h3>
+                        <p class="text-apple-gray-700 mb-4">Survive in a world overrun by zombies. Gather resources and build defenses.</p>
+                        <a href="#" class="inline-block bg-apple-gray-500 text-white font-semibold px-4 py-2 rounded-lg hover:bg-apple-gray-600 transition">Coming Soon</a>
+                    </div>
+                </div>
+
+                <!-- Ninja Warrior (Coming Soon) -->
+                <div class="game-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/600x400?text=Ninja+Warrior" alt="Ninja Warrior" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-apple-gray-900 mb-2">Ninja Warrior</h3>
+                        <p class="text-apple-gray-700 mb-4">Master the art of stealth and combat in this fast-paced ninja action game.</p>
+                        <a href="#" class="inline-block bg-apple-gray-500 text-white font-semibold px-4 py-2 rounded-lg hover:bg-apple-gray-600 transition">Coming Soon</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="adventure" class="mb-12">
+            <h2 class="text-3xl font-bold text-apple-pink mb-6">Adventure Games</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Space Adventure (Coming Soon) -->
+                <div class="game-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/600x400?text=Space+Adventure" alt="Space Adventure" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-apple-gray-900 mb-2">Space Adventure</h3>
+                        <p class="text-apple-gray-700 mb-4">Explore the universe and discover new planets in this space simulator.</p>
+                        <a href="#" class="inline-block bg-apple-gray-500 text-white font-semibold px-4 py-2 rounded-lg hover:bg-apple-gray-600 transition">Coming Soon</a>
+                    </div>
+                </div>
+
+                <!-- Treasure Hunter (Coming Soon) -->
+                <div class="game-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/600x400?text=Treasure+Hunter" alt="Treasure Hunter" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-apple-gray-900 mb-2">Treasure Hunter</h3>
+                        <p class="text-apple-gray-700 mb-4">Embark on a journey to find hidden treasures across ancient ruins and mysterious islands.</p>
+                        <a href="#" class="inline-block bg-apple-gray-500 text-white font-semibold px-4 py-2 rounded-lg hover:bg-apple-gray-600 transition">Coming Soon</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="puzzle" class="mb-12">
+            <h2 class="text-3xl font-bold text-apple-indigo mb-6">Puzzle Games</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Puzzle Master (Coming Soon) -->
+                <div class="game-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/600x400?text=Puzzle+Master" alt="Puzzle Master" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-apple-gray-900 mb-2">Puzzle Master</h3>
+                        <p class="text-apple-gray-700 mb-4">Challenge your brain with hundreds of unique puzzles and riddles.</p>
+                        <a href="#" class="inline-block bg-apple-gray-500 text-white font-semibold px-4 py-2 rounded-lg hover:bg-apple-gray-600 transition">Coming Soon</a>
+                    </div>
+                </div>
+
+                <!-- Color Match (Coming Soon) -->
+                <div class="game-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/600x400?text=Color+Match" alt="Color Match" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-apple-gray-900 mb-2">Color Match</h3>
+                        <p class="text-apple-gray-700 mb-4">Match colors and create combinations in this addictive puzzle game.</p>
+                        <a href="#" class="inline-block bg-apple-gray-500 text-white font-semibold px-4 py-2 rounded-lg hover:bg-apple-gray-600 transition">Coming Soon</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="strategy" class="mb-12">
+            <h2 class="text-3xl font-bold text-apple-teal mb-6">Strategy Games</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Kingdom Builder (Coming Soon) -->
+                <div class="game-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/600x400?text=Kingdom+Builder" alt="Kingdom Builder" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-apple-gray-900 mb-2">Kingdom Builder</h3>
+                        <p class="text-apple-gray-700 mb-4">Build and manage your own medieval kingdom in this strategy simulation game.</p>
+                        <a href="#" class="inline-block bg-apple-gray-500 text-white font-semibold px-4 py-2 rounded-lg hover:bg-apple-gray-600 transition">Coming Soon</a>
+                    </div>
+                </div>
+
+                <!-- Chess Master (Coming Soon) -->
+                <div class="game-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/600x400?text=Chess+Master" alt="Chess Master" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-apple-gray-900 mb-2">Chess Master</h3>
+                        <p class="text-apple-gray-700 mb-4">Play chess against AI opponents of various difficulty levels.</p>
+                        <a href="#" class="inline-block bg-apple-gray-500 text-white font-semibold px-4 py-2 rounded-lg hover:bg-apple-gray-600 transition">Coming Soon</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-apple-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-xl font-bold">Gamelist.quest</p>
+                    <p class="text-apple-gray-400">© 2023 Gamelist.quest. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-apple-gray-400 hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="text-apple-gray-400 hover:text-white transition">Terms of Service</a>
+                    <a href="#" class="text-apple-gray-400 hover:text-white transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script to handle smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
